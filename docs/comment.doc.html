@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>WxaClassroomMutation</title>
+    <title>Comment</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -25,14 +25,14 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Schema</h4>
     <ul>
-        <li  title="WxaClassroomQuery">
-            <a href="wxaclassroomquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>WxaClassroomQuery</code>
+        <li  title="WxaParentQuery">
+            <a href="wxaparentquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>WxaParentQuery</code>
             </a>
         </li>
-        <li class="slds-is-active" title="WxaClassroomMutation">
-            <a href="wxaclassroommutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>WxaClassroomMutation</code>
+        <li  title="WxaParentMutation">
+            <a href="wxaparentmutation.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>WxaParentMutation</code>
             </a>
         </li>
     </ul>
@@ -55,11 +55,6 @@
                 <code>Datetime</code>
             </a>
         </li>
-        <li  title="Float">
-            <a href="float.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>Float</code>
-            </a>
-        </li>
         <li  title="ID">
             <a href="id.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>ID</code>
@@ -75,11 +70,26 @@
                 <code>String</code>
             </a>
         </li>
+        <li  title="UploadFile">
+            <a href="uploadfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>UploadFile</code>
+            </a>
+        </li>
     </ul>
 </div>
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
     <ul>
+        <li  title="FeatureStyleEnum">
+            <a href="featurestyleenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>FeatureStyleEnum</code>
+            </a>
+        </li>
+        <li  title="LikeableEnum">
+            <a href="likeableenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>LikeableEnum</code>
+            </a>
+        </li>
         <li  title="__DirectiveLocation">
             <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>__DirectiveLocation</code>
@@ -95,19 +105,59 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li  title="Honor">
-            <a href="honor.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>Honor</code>
+        <li  title="ClientNoti">
+            <a href="clientnoti.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>ClientNoti</code>
             </a>
         </li>
-        <li  title="HonorConnection">
-            <a href="honorconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>HonorConnection</code>
+        <li  title="ClientNotiConnection">
+            <a href="clientnoticonnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>ClientNotiConnection</code>
             </a>
         </li>
-        <li  title="HonorEdge">
-            <a href="honoredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>HonorEdge</code>
+        <li  title="ClientNotiEdge">
+            <a href="clientnotiedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>ClientNotiEdge</code>
+            </a>
+        </li>
+        <li class="slds-is-active" title="Comment">
+            <a href="comment.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>Comment</code>
+            </a>
+        </li>
+        <li  title="CommentConnection">
+            <a href="commentconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>CommentConnection</code>
+            </a>
+        </li>
+        <li  title="CommentEdge">
+            <a href="commentedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>CommentEdge</code>
+            </a>
+        </li>
+        <li  title="CourseAttributes">
+            <a href="courseattributes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>CourseAttributes</code>
+            </a>
+        </li>
+        <li  title="CourseSchedules">
+            <a href="courseschedules.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>CourseSchedules</code>
+            </a>
+        </li>
+        <li  title="Feature">
+            <a href="feature.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>Feature</code>
+            </a>
+        </li>
+        <li  title="FeatureConnection">
+            <a href="featureconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>FeatureConnection</code>
+            </a>
+        </li>
+        <li  title="FeatureEdge">
+            <a href="featureedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>FeatureEdge</code>
             </a>
         </li>
         <li  title="PageInfo">
@@ -120,6 +170,21 @@
                 <code>Photo</code>
             </a>
         </li>
+        <li  title="PhotoAlbum">
+            <a href="photoalbum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>PhotoAlbum</code>
+            </a>
+        </li>
+        <li  title="PhotoAlbumConnection">
+            <a href="photoalbumconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>PhotoAlbumConnection</code>
+            </a>
+        </li>
+        <li  title="PhotoAlbumEdge">
+            <a href="photoalbumedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>PhotoAlbumEdge</code>
+            </a>
+        </li>
         <li  title="PhotoConnection">
             <a href="photoconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PhotoConnection</code>
@@ -128,6 +193,21 @@
         <li  title="PhotoEdge">
             <a href="photoedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PhotoEdge</code>
+            </a>
+        </li>
+        <li  title="Praise">
+            <a href="praise.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>Praise</code>
+            </a>
+        </li>
+        <li  title="PraiseConnection">
+            <a href="praiseconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>PraiseConnection</code>
+            </a>
+        </li>
+        <li  title="PraiseEdge">
+            <a href="praiseedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>PraiseEdge</code>
             </a>
         </li>
         <li  title="School">
@@ -140,11 +220,6 @@
                 <code>SchoolAbilityConfig</code>
             </a>
         </li>
-        <li  title="Star">
-            <a href="star.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>Star</code>
-            </a>
-        </li>
         <li  title="StaticClass">
             <a href="staticclass.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>StaticClass</code>
@@ -153,16 +228,6 @@
         <li  title="Student">
             <a href="student.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Student</code>
-            </a>
-        </li>
-        <li  title="StudentCourseAttributes">
-            <a href="studentcourseattributes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>StudentCourseAttributes</code>
-            </a>
-        </li>
-        <li  title="StudentCourseSchedules">
-            <a href="studentcourseschedules.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>StudentCourseSchedules</code>
             </a>
         </li>
         <li  title="StudentSignIns">
@@ -183,36 +248,6 @@
         <li  title="Term">
             <a href="term.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Term</code>
-            </a>
-        </li>
-        <li  title="Video">
-            <a href="video.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>Video</code>
-            </a>
-        </li>
-        <li  title="VideoConnection">
-            <a href="videoconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>VideoConnection</code>
-            </a>
-        </li>
-        <li  title="VideoEdge">
-            <a href="videoedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>VideoEdge</code>
-            </a>
-        </li>
-        <li  title="Work">
-            <a href="work.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>Work</code>
-            </a>
-        </li>
-        <li  title="WorkConnection">
-            <a href="workconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>WorkConnection</code>
-            </a>
-        </li>
-        <li  title="WorkEdge">
-            <a href="workedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                <code>WorkEdge</code>
             </a>
         </li>
         <li  title="__Directive">
@@ -243,6 +278,16 @@
         <li  title="__Type">
             <a href="type.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>__Type</code>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+    <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
+    <ul>
+        <li  title="PhotoInput">
+            <a href="photoinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                <code>PhotoInput</code>
             </a>
         </li>
     </ul>
@@ -280,16 +325,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>WxaClassroomMutation</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"></div>
+    <h1 class="slds-text-heading--large"><code>Comment</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>评论</p>
+</div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">WxaClassroomMutation</span> {</li><li></li><li><span class="tab"><span class="comment line">#   绑定/更换绑定学生</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>schoolId</strong>: 学生所在学校id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>classroomId</strong>: 学生所在班级id</span></span></li><li><span class="tab"><span class="comment line">#   <strong>number</strong>: 学生学号</span></span></li><li><span class="tab"><span class="comment line">#   <strong>studentName</strong>: 学生姓名</span></span></li><li><span class="tab"><span class="meta">bindStudent</span>(<li><span class="tab"><span class="comment line">#   学生所在学校id</span></span></li><li><span class="tab"><span class="meta">schoolId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li>, <li><span class="tab"><span class="comment line">#   学生所在班级id</span></span></li><li><span class="tab"><span class="meta">classroomId</span>: <a class="support type" href="id.doc.html">ID</a>!</span></li>, <li><span class="tab"><span class="comment line">#   学生学号</span></span></li><li><span class="tab"><span class="meta">number</span>: <a class="support type" href="string.doc.html">String</a>!</span></li>, <li><span class="tab"><span class="comment line">#   学生姓名</span></span></li><li><span class="tab"><span class="meta">studentName</span>: <a class="support type" href="string.doc.html">String</a>!</span></li>): <a class="support type" href="student.doc.html">Student</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   解除绑定学生,返回无意义字符串</span></span></li><li><span class="tab"><span class="meta">unbindStudent</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Comment</span> {</li><li></li><li><span class="tab"><span class="comment line">#   评论者头像url</span></span></li><li><span class="tab"><span class="meta">avatarUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   评论内容</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   是否当前登录用户的发布的评论</span></span></li><li><span class="tab"><span class="meta">ownComment</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<div class="require-by anyone">This element is not required by anyone</div>
+<ul class="require-by"><li><a href="commentedge.doc.html" title="CommentEdge - An edge in a connection.">CommentEdge<em>An edge in a connection.</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
