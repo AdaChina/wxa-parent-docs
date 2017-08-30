@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>StudentSignInsAttributes</title>
+    <title>PhotoRecord</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -195,7 +195,7 @@
                 <code>PhotoEdge</code>
             </a>
         </li>
-        <li  title="PhotoRecord">
+        <li class="slds-is-active" title="PhotoRecord">
             <a href="photorecord.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>PhotoRecord</code>
             </a>
@@ -250,7 +250,7 @@
                 <code>StudentSignIns</code>
             </a>
         </li>
-        <li class="slds-is-active" title="StudentSignInsAttributes">
+        <li  title="StudentSignInsAttributes">
             <a href="studentsigninsattributes.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>StudentSignInsAttributes</code>
             </a>
@@ -340,17 +340,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>StudentSignInsAttributes</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>学生签到详细信息</p>
+    <h1 class="slds-text-heading--large"><code>PhotoRecord</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>家长上传照片记录</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">StudentSignInsAttributes</span> {</li><li></li><li><span class="tab"><span class="comment line">#   签到标题</span></span></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   签到状态对应颜色</span></span></li><li><span class="tab"><span class="meta">stateColor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   签到结果</span></span></li><li><span class="tab"><span class="meta">stateText</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   签到时间</span></span></li><li><span class="tab"><span class="meta">time</span>: <a class="support type" href="datetime.doc.html">Datetime</a> </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">PhotoRecord</span> {</li><li></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">deleted</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">moved</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">published</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="studentsignins.doc.html" title="StudentSignIns - 学生签到日期信息">StudentSignIns<em>学生签到日期信息</em></a><li></ul>
+<ul class="require-by"><li><a href="photorecordedge.doc.html" title="PhotoRecordEdge - An edge in a connection.">PhotoRecordEdge<em>An edge in a connection.</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
