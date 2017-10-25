@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ClientNotiConnection</title>
+    <title>SchoolNotificationEdge</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -130,7 +130,7 @@
                 <code>ClientNoti</code>
             </a>
         </li>
-        <li class="slds-is-active" title="ClientNotiConnection">
+        <li  title="ClientNotiConnection">
             <a href="clientnoticonnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>ClientNotiConnection</code>
             </a>
@@ -270,7 +270,7 @@
                 <code>SchoolNotificationConnection</code>
             </a>
         </li>
-        <li  title="SchoolNotificationEdge">
+        <li class="slds-is-active" title="SchoolNotificationEdge">
             <a href="schoolnotificationedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>SchoolNotificationEdge</code>
             </a>
@@ -380,17 +380,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>ClientNotiConnection</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>The connection type for ClientNoti.</p>
+    <h1 class="slds-text-heading--large"><code>SchoolNotificationEdge</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>An edge in a connection.</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClientNotiConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="clientnotiedge.doc.html">ClientNotiEdge</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">SchoolNotificationEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="schoolnotification.doc.html">SchoolNotification</a> </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - ">WxaParentQuery<em>null</em></a><li></ul>
+<ul class="require-by"><li><a href="schoolnotificationconnection.doc.html" title="SchoolNotificationConnection - The connection type for SchoolNotification.">SchoolNotificationConnection<em>The connection type for SchoolNotification.</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
