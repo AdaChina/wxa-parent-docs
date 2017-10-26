@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Praise</title>
+    <title>FeedEdge</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -190,7 +190,7 @@
                 <code>FeedConnection</code>
             </a>
         </li>
-        <li  title="FeedEdge">
+        <li class="slds-is-active" title="FeedEdge">
             <a href="feededge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>FeedEdge</code>
             </a>
@@ -245,7 +245,7 @@
                 <code>PhotoRecordEdge</code>
             </a>
         </li>
-        <li class="slds-is-active" title="Praise">
+        <li  title="Praise">
             <a href="praise.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 <code>Praise</code>
             </a>
@@ -395,17 +395,17 @@
             </div>
         </div>
 <section class="title">
-    <h1 class="slds-text-heading--large"><code>Praise</code></h1>
-    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>班级表彰</p>
+    <h1 class="slds-text-heading--large"><code>FeedEdge</code></h1>
+    <div class="gdoc-text--introduction slds-m-top--small slds-m-bottom--x-large"><p>An edge in a connection.</p>
 </div>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">GraphQL Schema definition</h3>
-<code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Praise</span> {</li><li></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>first</strong>: Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>after</strong>: Returns the elements in the list that come after the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>last</strong>: Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>before</strong>: Returns the elements in the list that come before the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="meta">comments</span>(<li><span class="tab"><span class="comment line">#   Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="meta">first</span>: <a class="support type" href="int.doc.html">Int</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the elements in the list that come after the specified global ID.</span></span></li><li><span class="tab"><span class="meta">after</span>: <a class="support type" href="string.doc.html">String</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="meta">last</span>: <a class="support type" href="int.doc.html">Int</a></span></li>, <li><span class="tab"><span class="comment line">#   Returns the elements in the list that come before the specified global ID.</span></span></li><li><span class="tab"><span class="meta">before</span>: <a class="support type" href="string.doc.html">String</a></span></li>): <a class="support type" href="commentconnection.doc.html">CommentConnection</a> </span></li><li></li><li><span class="tab"><span class="meta">commentsCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   当前用户是否已点赞</span></span></li><li><span class="tab"><span class="meta">liked</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">likesCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   家长意见, 没有时为null</span></span></li><li><span class="tab"><span class="meta">opinion</span>: <a class="support type" href="praiseopinion.doc.html">PraiseOpinion</a> </span></li><li></li><li><span class="tab"><span class="meta">studentId</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">studentName</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+<code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">FeedEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="feed.doc.html">Feed</a> </span></li><li>}</li></ul></code>
 </section>
 <section>
 <h2 class="slds-section__title slds-m-top--small">Require by</h3>
-<ul class="require-by"><li><a href="praiseedge.doc.html" title="PraiseEdge - An edge in a connection.">PraiseEdge<em>An edge in a connection.</em></a><li><li><a href="wxaparentmutation.doc.html" title="WxaParentMutation - ">WxaParentMutation<em>null</em></a><li></ul>
+<ul class="require-by"><li><a href="feedconnection.doc.html" title="FeedConnection - The connection type for Feed.">FeedConnection<em>The connection type for Feed.</em></a><li></ul>
 </section>
     </main>
     <footer><div class="slds-col-rule--top slds-p-around--large slds-section-title--divider">
