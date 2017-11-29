@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>PraiseStyleEnum</title>
+    <title>Memo</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -100,7 +100,7 @@
                 PhotoRecordStatusEnum
             </a>
         </li>
-        <li class="slds-is-active" title="PraiseStyleEnum">
+        <li  title="PraiseStyleEnum">
             <a href="praisestyleenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PraiseStyleEnum
             </a>
@@ -200,7 +200,7 @@
                 FeedEdge
             </a>
         </li>
-        <li  title="Memo">
+        <li class="slds-is-active" title="Memo">
             <a href="memo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Memo
             </a>
@@ -420,9 +420,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
-        <h1 class="slds-text-heading--large">PraiseStyleEnum</h1>
-        <div class="slds-text-body--regular"><p>表彰风格</p>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">Memo</h1>
+        <div class="slds-text-body--regular"><p>留言</p>
 </div>
     </div>
 </section>
@@ -434,7 +434,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">enum</span> <span class="identifier">PraiseStyleEnum</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   全屏</span></span></li><li><span class="tab"><span class="meta">fullscreen</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   单图片</span></span></li><li><span class="tab"><span class="meta">image</span></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Memo</span> {</li><li></li><li><span class="tab"><span class="comment line">#   内容</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   创建时间</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   (学生)是否已读</span></span></li><li><span class="tab"><span class="meta">status</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -445,7 +445,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="praise.doc.html" title="Praise - 班级表彰">Praise<em>班级表彰</em></a><li></ul>
+        <ul class="require-by"><li><a href="memoedge.doc.html" title="MemoEdge - An edge in a connection.">MemoEdge<em>An edge in a connection.</em></a><li><li><a href="wxaparentmutation.doc.html" title="WxaParentMutation - ">WxaParentMutation<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
