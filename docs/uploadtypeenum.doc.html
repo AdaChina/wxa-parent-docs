@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>__Directive</title>
+    <title>UploadTypeEnum</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -105,7 +105,7 @@
                 ShareableEnum
             </a>
         </li>
-        <li  title="UploadTypeEnum">
+        <li class="slds-is-active" title="UploadTypeEnum">
             <a href="uploadtypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadTypeEnum
             </a>
@@ -390,7 +390,7 @@
                 Term
             </a>
         </li>
-        <li class="slds-is-active" title="__Directive">
+        <li  title="__Directive">
             <a href="directive.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 __Directive
             </a>
@@ -465,10 +465,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">__Directive</h1>
-        <div class="slds-text-body--regular"><p>A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.</p>
-<p>In some cases, you need to provide options to alter GraphQL&#39;s execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.</p>
+        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
+        <h1 class="slds-text-heading--large">UploadTypeEnum</h1>
+        <div class="slds-text-body--regular"><p>上传类型</p>
 </div>
     </div>
 </section>
@@ -480,7 +479,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">__Directive</span> {</li><li></li><li><span class="tab"><span class="meta">args</span>: [<a class="support type" href="inputvalue.spec.html">__InputValue</a>!]! </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">locations</span>: [<a class="support type" href="directivelocation.spec.html">__DirectiveLocation</a>!]! </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">onField</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Use `locations`." </span> )</span></li><li></li><li><span class="tab"><span class="meta">onFragment</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Use `locations`." </span> )</span></li><li></li><li><span class="tab"><span class="meta">onOperation</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! <span class="keyword operator ts">@deprecated</span>( reason: <span class="string">"Use `locations`." </span> )</span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">UploadTypeEnum</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   简介</span></span></li><li><span class="tab"><span class="meta">feature</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   表彰</span></span></li><li><span class="tab"><span class="meta">praise</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   照片</span></span></li><li><span class="tab"><span class="meta">photo</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   通知</span></span></li><li><span class="tab"><span class="meta">client_noti</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -491,7 +490,55 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="schema.spec.html" title="__Schema - A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.">__Schema<em>A GraphQL Schema defines the capabilities of a GraphQL server. It exposes all available types and directives on the server, as well as the entry points for query, mutation, and subscription operations.</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
+
+not_bind_student: 未绑定学生
+
+student_bind_info_error: 绑定学生信息有误
+
+week_number_error: 周数不在可选范围内
+
+start_date_error: 开始日期不能大于结束日期
+
+not_authorize: 权限不足
+
+feature_not_found: 班级简介不存在
+
+album_not_found: 班级故事不存在
+
+noti_not_found: 班级通知不存在
+
+shareable_not_found: 分享页面不存在
+
+student_not_found: 学生不存在
+
+current_term_blank: 没有当前学期信息
+
+">WxaParentQuery<em>业务逻辑错误代码(包含query和mutation)
+
+not_bind_student: 未绑定学生
+
+student_bind_info_error: 绑定学生信息有误
+
+week_number_error: 周数不在可选范围内
+
+start_date_error: 开始日期不能大于结束日期
+
+not_authorize: 权限不足
+
+feature_not_found: 班级简介不存在
+
+album_not_found: 班级故事不存在
+
+noti_not_found: 班级通知不存在
+
+shareable_not_found: 分享页面不存在
+
+student_not_found: 学生不存在
+
+current_term_blank: 没有当前学期信息
+
+</em></a><li></ul>
     </div>
 </section>
 <footer>

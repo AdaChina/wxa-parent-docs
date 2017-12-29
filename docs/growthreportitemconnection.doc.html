@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>MemoConnection</title>
+    <title>GrowthReportItemConnection</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -70,11 +70,6 @@
                 String
             </a>
         </li>
-        <li  title="UploadFile">
-            <a href="uploadfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                UploadFile
-            </a>
-        </li>
     </ul>
 </div>
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
@@ -108,6 +103,11 @@
         <li  title="ShareableEnum">
             <a href="shareableenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ShareableEnum
+            </a>
+        </li>
+        <li  title="UploadTypeEnum">
+            <a href="uploadtypeenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                UploadTypeEnum
             </a>
         </li>
         <li  title="WxaEnum">
@@ -200,19 +200,49 @@
                 FeedEdge
             </a>
         </li>
-        <li  title="Memo">
-            <a href="memo.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                Memo
+        <li  title="GrowthReport">
+            <a href="growthreport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReport
             </a>
         </li>
-        <li class="slds-is-active" title="MemoConnection">
-            <a href="memoconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MemoConnection
+        <li  title="GrowthReportConnection">
+            <a href="growthreportconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportConnection
             </a>
         </li>
-        <li  title="MemoEdge">
-            <a href="memoedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                MemoEdge
+        <li  title="GrowthReportEdge">
+            <a href="growthreportedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportEdge
+            </a>
+        </li>
+        <li  title="GrowthReportItem">
+            <a href="growthreportitem.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportItem
+            </a>
+        </li>
+        <li class="slds-is-active" title="GrowthReportItemConnection">
+            <a href="growthreportitemconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportItemConnection
+            </a>
+        </li>
+        <li  title="GrowthReportItemEdge">
+            <a href="growthreportitemedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                GrowthReportItemEdge
+            </a>
+        </li>
+        <li  title="Image">
+            <a href="image.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Image
+            </a>
+        </li>
+        <li  title="ImageConnection">
+            <a href="imageconnection.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageConnection
+            </a>
+        </li>
+        <li  title="ImageEdge">
+            <a href="imageedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ImageEdge
             </a>
         </li>
         <li  title="PageInfo">
@@ -288,6 +318,11 @@
         <li  title="PraiseOpinion">
             <a href="praiseopinion.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 PraiseOpinion
+            </a>
+        </li>
+        <li  title="QiniuCertificate">
+            <a href="qiniucertificate.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                QiniuCertificate
             </a>
         </li>
         <li  title="School">
@@ -431,8 +466,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">MemoConnection</h1>
-        <div class="slds-text-body--regular"><p>The connection type for Memo.</p>
+        <h1 class="slds-text-heading--large">GrowthReportItemConnection</h1>
+        <div class="slds-text-body--regular"><p>The connection type for GrowthReportItem.</p>
 </div>
     </div>
 </section>
@@ -444,7 +479,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">MemoConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="memoedge.doc.html">MemoEdge</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">GrowthReportItemConnection</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A list of edges.</span></span></li><li><span class="tab"><span class="meta">edges</span>: [<a class="support type" href="growthreportitemedge.doc.html">GrowthReportItemEdge</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   Information to aid in pagination.</span></span></li><li><span class="tab"><span class="meta">pageInfo</span>: <a class="support type" href="pageinfo.doc.html">PageInfo</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -455,55 +490,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
-
-not_bind_student: 未绑定学生
-
-student_bind_info_error: 绑定学生信息有误
-
-week_number_error: 周数不在可选范围内
-
-start_date_error: 开始日期不能大于结束日期
-
-not_authorize: 权限不足
-
-feature_not_found: 班级简介不存在
-
-album_not_found: 班级故事不存在
-
-noti_not_found: 班级通知不存在
-
-shareable_not_found: 分享页面不存在
-
-student_not_found: 学生不存在
-
-current_term_blank: 没有当前学期信息
-
-">WxaParentQuery<em>业务逻辑错误代码(包含query和mutation)
-
-not_bind_student: 未绑定学生
-
-student_bind_info_error: 绑定学生信息有误
-
-week_number_error: 周数不在可选范围内
-
-start_date_error: 开始日期不能大于结束日期
-
-not_authorize: 权限不足
-
-feature_not_found: 班级简介不存在
-
-album_not_found: 班级故事不存在
-
-noti_not_found: 班级通知不存在
-
-shareable_not_found: 分享页面不存在
-
-student_not_found: 学生不存在
-
-current_term_blank: 没有当前学期信息
-
-</em></a><li></ul>
+        <ul class="require-by"><li><a href="growthreport.doc.html" title="GrowthReport - 成长足迹">GrowthReport<em>成长足迹</em></a><li></ul>
     </div>
 </section>
 <footer>
