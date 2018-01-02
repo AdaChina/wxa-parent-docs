@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Date</title>
+    <title>ParentReportInput</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -45,7 +45,7 @@
                 Boolean
             </a>
         </li>
-        <li class="slds-is-active" title="Date">
+        <li  title="Date">
             <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Date
             </a>
@@ -430,7 +430,7 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Input Objects</h4>
     <ul>
-        <li  title="ParentReportInput">
+        <li class="slds-is-active" title="ParentReportInput">
             <a href="parentreportinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ParentReportInput
             </a>
@@ -475,10 +475,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
-        <h1 class="slds-text-heading--large">Date</h1>
-        <div class="slds-text-body--regular"><p>日期类型,为iso8601字符串</p>
-</div>
+        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
+        <h1 class="slds-text-heading--large">ParentReportInput</h1>
+        <div class="slds-text-body--regular"></div>
     </div>
 </section>
 <section>
@@ -489,7 +488,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Date</span></li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">input</span> <span class="identifier">ParentReportInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   事件时间</span></span></li><li><span class="tab"><span class="meta">eventDate</span>: <a class="support type" href="date.doc.html">Date</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   描述</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a>!</span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   图片Key数组</span></span></li><li><span class="tab"><span class="meta">imageKeys</span>: [<a class="support type" href="string.doc.html">String</a>]</span></li></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -500,55 +499,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="courseschedules.doc.html" title="CourseSchedules - 课程列表">CourseSchedules<em>课程列表</em></a><li><li><a href="feed.doc.html" title="Feed - 资讯">Feed<em>资讯</em></a><li><li><a href="growthreportitem.doc.html" title="GrowthReportItem - 成长足迹项">GrowthReportItem<em>成长足迹项</em></a><li><li><a href="parentreport.doc.html" title="ParentReport - 家长足迹">ParentReport<em>家长足迹</em></a><li><li><a href="parentreportinput.doc.html" title="ParentReportInput - ">ParentReportInput<em>null</em></a><li><li><a href="photoalbum.doc.html" title="PhotoAlbum - 班级故事">PhotoAlbum<em>班级故事</em></a><li><li><a href="schoolnotification.doc.html" title="SchoolNotification - 通知">SchoolNotification<em>通知</em></a><li><li><a href="student.doc.html" title="Student - 学生">Student<em>学生</em></a><li><li><a href="studentsignins.doc.html" title="StudentSignIns - 学生签到日期信息">StudentSignIns<em>学生签到日期信息</em></a><li><li><a href="term.doc.html" title="Term - 学期">Term<em>学期</em></a><li><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
-
-not_bind_student: 未绑定学生
-
-student_bind_info_error: 绑定学生信息有误
-
-week_number_error: 周数不在可选范围内
-
-start_date_error: 开始日期不能大于结束日期
-
-not_authorize: 权限不足
-
-feature_not_found: 班级简介不存在
-
-album_not_found: 班级故事不存在
-
-noti_not_found: 班级通知不存在
-
-shareable_not_found: 分享页面不存在
-
-student_not_found: 学生不存在
-
-current_term_blank: 没有当前学期信息
-
-">WxaParentQuery<em>业务逻辑错误代码(包含query和mutation)
-
-not_bind_student: 未绑定学生
-
-student_bind_info_error: 绑定学生信息有误
-
-week_number_error: 周数不在可选范围内
-
-start_date_error: 开始日期不能大于结束日期
-
-not_authorize: 权限不足
-
-feature_not_found: 班级简介不存在
-
-album_not_found: 班级故事不存在
-
-noti_not_found: 班级通知不存在
-
-shareable_not_found: 分享页面不存在
-
-student_not_found: 学生不存在
-
-current_term_blank: 没有当前学期信息
-
-</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaparentmutation.doc.html" title="WxaParentMutation - ">WxaParentMutation<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

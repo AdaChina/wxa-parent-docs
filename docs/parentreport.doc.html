@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Date</title>
+    <title>ParentReport</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -45,7 +45,7 @@
                 Boolean
             </a>
         </li>
-        <li class="slds-is-active" title="Date">
+        <li  title="Date">
             <a href="date.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Date
             </a>
@@ -255,7 +255,7 @@
                 ParentReceipt
             </a>
         </li>
-        <li  title="ParentReport">
+        <li class="slds-is-active" title="ParentReport">
             <a href="parentreport.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ParentReport
             </a>
@@ -475,9 +475,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
-        <h1 class="slds-text-heading--large">Date</h1>
-        <div class="slds-text-body--regular"><p>日期类型,为iso8601字符串</p>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">ParentReport</h1>
+        <div class="slds-text-body--regular"><p>家长足迹</p>
 </div>
     </div>
 </section>
@@ -489,7 +489,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Date</span></li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ParentReport</span> {</li><li></li><li><span class="tab"><span class="comment line">#   创建时间</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   描述</span></span></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   事件时间</span></span></li><li><span class="tab"><span class="meta">eventDate</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   图片</span></span></li><li><span class="tab"><span class="comment line"># </span></span></li><li><span class="tab"><span class="comment line"># Arguments</span></span></li><li><span class="tab"><span class="comment line">#   <strong>first</strong>: Returns the first _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>after</strong>: Returns the elements in the list that come after the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>last</strong>: Returns the last _n_ elements from the list.</span></span></li><li><span class="tab"><span class="comment line">#   <strong>before</strong>: Returns the elements in the list that come before the </span></span></li><li><span class="tab"><span class="comment line">#   specified global ID.</span></span></li><li><span class="tab"><span class="meta">images</span>(<span class="meta">first</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">after</span>: <a class="support type" href="string.doc.html">String</a>, <span class="meta">last</span>: <a class="support type" href="int.doc.html">Int</a>, <span class="meta">before</span>: <a class="support type" href="string.doc.html">String</a>): <a class="support type" href="imageconnection.doc.html">ImageConnection</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   家长头像</span></span></li><li><span class="tab"><span class="meta">wechatUserAvatarUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   家长微信名</span></span></li><li><span class="tab"><span class="meta">wechatUserNickname</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -500,7 +500,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="courseschedules.doc.html" title="CourseSchedules - 课程列表">CourseSchedules<em>课程列表</em></a><li><li><a href="feed.doc.html" title="Feed - 资讯">Feed<em>资讯</em></a><li><li><a href="growthreportitem.doc.html" title="GrowthReportItem - 成长足迹项">GrowthReportItem<em>成长足迹项</em></a><li><li><a href="parentreport.doc.html" title="ParentReport - 家长足迹">ParentReport<em>家长足迹</em></a><li><li><a href="parentreportinput.doc.html" title="ParentReportInput - ">ParentReportInput<em>null</em></a><li><li><a href="photoalbum.doc.html" title="PhotoAlbum - 班级故事">PhotoAlbum<em>班级故事</em></a><li><li><a href="schoolnotification.doc.html" title="SchoolNotification - 通知">SchoolNotification<em>通知</em></a><li><li><a href="student.doc.html" title="Student - 学生">Student<em>学生</em></a><li><li><a href="studentsignins.doc.html" title="StudentSignIns - 学生签到日期信息">StudentSignIns<em>学生签到日期信息</em></a><li><li><a href="term.doc.html" title="Term - 学期">Term<em>学期</em></a><li><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
+        <ul class="require-by"><li><a href="wxaparentmutation.doc.html" title="WxaParentMutation - ">WxaParentMutation<em>null</em></a><li><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
 
 not_bind_student: 未绑定学生
 
