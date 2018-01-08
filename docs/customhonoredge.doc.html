@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ClientNoti</title>
+    <title>CustomHonorEdge</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -135,7 +135,7 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li class="slds-is-active" title="ClientNoti">
+        <li  title="ClientNoti">
             <a href="clientnoti.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ClientNoti
             </a>
@@ -185,7 +185,7 @@
                 CustomHonorConnection
             </a>
         </li>
-        <li  title="CustomHonorEdge">
+        <li class="slds-is-active" title="CustomHonorEdge">
             <a href="customhonoredge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CustomHonorEdge
             </a>
@@ -501,8 +501,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">ClientNoti</h1>
-        <div class="slds-text-body--regular"><p>通知</p>
+        <h1 class="slds-text-heading--large">CustomHonorEdge</h1>
+        <div class="slds-text-body--regular"><p>An edge in a connection.</p>
 </div>
     </div>
 </section>
@@ -514,7 +514,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClientNoti</span> {</li><li></li><li><span class="tab"><span class="comment line">#   是否发布到班牌</span></span></li><li><span class="tab"><span class="meta">clientPublish</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   内容</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   创建时间</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   已读通知的学生(家长)回执列表</span></span></li><li><span class="tab"><span class="meta">parentReceipts</span>: [<a class="support type" href="parentreceipt.doc.html">ParentReceipt</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   已读回执数量</span></span></li><li><span class="tab"><span class="meta">recepitsCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   未读人数</span></span></li><li><span class="tab"><span class="meta">unreadCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   未读通知的学生(家长)列表</span></span></li><li><span class="tab"><span class="meta">unreadStudentParents</span>: [<a class="support type" href="student.doc.html">Student</a>]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">CustomHonorEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="customhonor.doc.html">CustomHonor</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -525,7 +525,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="clientnotiedge.doc.html" title="ClientNotiEdge - An edge in a connection.">ClientNotiEdge<em>An edge in a connection.</em></a><li></ul>
+        <ul class="require-by"><li><a href="customhonorconnection.doc.html" title="CustomHonorConnection - The connection type for CustomHonor.">CustomHonorConnection<em>The connection type for CustomHonor.</em></a><li></ul>
     </div>
 </section>
 <footer>

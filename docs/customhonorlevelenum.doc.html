@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ClientNoti</title>
+    <title>CustomHonorLevelEnum</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -80,7 +80,7 @@
                 CommentableTypeEnum
             </a>
         </li>
-        <li  title="CustomHonorLevelEnum">
+        <li class="slds-is-active" title="CustomHonorLevelEnum">
             <a href="customhonorlevelenum.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 CustomHonorLevelEnum
             </a>
@@ -135,7 +135,7 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li class="slds-is-active" title="ClientNoti">
+        <li  title="ClientNoti">
             <a href="clientnoti.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ClientNoti
             </a>
@@ -500,9 +500,9 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">ClientNoti</h1>
-        <div class="slds-text-body--regular"><p>通知</p>
+        <p class="slds-text-title--caps slds-text-color--weak">ENUM</p>
+        <h1 class="slds-text-heading--large">CustomHonorLevelEnum</h1>
+        <div class="slds-text-body--regular"><p>获奖级别类型</p>
 </div>
     </div>
 </section>
@@ -514,7 +514,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClientNoti</span> {</li><li></li><li><span class="tab"><span class="comment line">#   是否发布到班牌</span></span></li><li><span class="tab"><span class="meta">clientPublish</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   内容</span></span></li><li><span class="tab"><span class="meta">content</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   创建时间</span></span></li><li><span class="tab"><span class="meta">createdAt</span>: <a class="support type" href="datetime.doc.html">Datetime</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   已读通知的学生(家长)回执列表</span></span></li><li><span class="tab"><span class="meta">parentReceipts</span>: [<a class="support type" href="parentreceipt.doc.html">ParentReceipt</a>] </span></li><li></li><li><span class="tab"><span class="comment line">#   已读回执数量</span></span></li><li><span class="tab"><span class="meta">recepitsCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   未读人数</span></span></li><li><span class="tab"><span class="meta">unreadCount</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   未读通知的学生(家长)列表</span></span></li><li><span class="tab"><span class="meta">unreadStudentParents</span>: [<a class="support type" href="student.doc.html">Student</a>]! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">enum</span> <span class="identifier">CustomHonorLevelEnum</span> {</li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   国家级</span></span></li><li><span class="tab"><span class="meta">country</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   省级</span></span></li><li><span class="tab"><span class="meta">province</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   市级</span></span></li><li><span class="tab"><span class="meta">city</span></span></li><li><span class="tab"></span></li><li><span class="tab"><span class="comment line">#   区级</span></span></li><li><span class="tab"><span class="meta">district</span></span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -525,7 +525,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="clientnotiedge.doc.html" title="ClientNotiEdge - An edge in a connection.">ClientNotiEdge<em>An edge in a connection.</em></a><li></ul>
+        <ul class="require-by"><li><a href="customhonor.doc.html" title="CustomHonor - 家长上传的荣誉">CustomHonor<em>家长上传的荣誉</em></a><li><li><a href="customhonorinput.doc.html" title="CustomHonorInput - ">CustomHonorInput<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
