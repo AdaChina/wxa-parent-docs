@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ArtHomework</title>
+    <title>ClassTerm</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -140,7 +140,7 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Objects</h4>
     <ul>
-        <li class="slds-is-active" title="ArtHomework">
+        <li  title="ArtHomework">
             <a href="arthomework.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ArtHomework
             </a>
@@ -150,7 +150,7 @@
                 Bmi
             </a>
         </li>
-        <li  title="ClassTerm">
+        <li class="slds-is-active" title="ClassTerm">
             <a href="classterm.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ClassTerm
             </a>
@@ -591,8 +591,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">ArtHomework</h1>
-        <div class="slds-text-body--regular"><p>艺术类作业</p>
+        <h1 class="slds-text-heading--large">ClassTerm</h1>
+        <div class="slds-text-body--regular"><p>班级学期信息</p>
 </div>
     </div>
 </section>
@@ -604,7 +604,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">ArtHomework</span> {</li><li></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">id</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">imageUrl</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   感悟</span></span></li><li><span class="tab"><span class="meta">remark</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ClassTerm</span> {</li><li></li><li><span class="tab"><span class="meta">grade</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">term</span>: <a class="support type" href="term.doc.html">Term</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -615,7 +615,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="wxaparentmutation.doc.html" title="WxaParentMutation - ">WxaParentMutation<em>null</em></a><li><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
+        <ul class="require-by"><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
 
 not_bind_student: 未绑定学生
 
