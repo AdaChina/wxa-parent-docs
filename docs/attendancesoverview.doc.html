@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ParentAlertEdge</title>
+    <title>AttendancesOverview</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -150,7 +150,7 @@
                 Attendance
             </a>
         </li>
-        <li  title="AttendancesOverview">
+        <li class="slds-is-active" title="AttendancesOverview">
             <a href="attendancesoverview.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 AttendancesOverview
             </a>
@@ -350,7 +350,7 @@
                 ParentAlertConnection
             </a>
         </li>
-        <li class="slds-is-active" title="ParentAlertEdge">
+        <li  title="ParentAlertEdge">
             <a href="parentalertedge.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ParentAlertEdge
             </a>
@@ -631,8 +631,8 @@
     </div>
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">ParentAlertEdge</h1>
-        <div class="slds-text-body--regular"><p>An edge in a connection.</p>
+        <h1 class="slds-text-heading--large">AttendancesOverview</h1>
+        <div class="slds-text-body--regular"><p>学生考勤信息纵览</p>
 </div>
     </div>
 </section>
@@ -644,7 +644,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">type</span> <span class="identifier">ParentAlertEdge</span> {</li><li></li><li><span class="tab"><span class="comment line">#   A cursor for use in pagination.</span></span></li><li><span class="tab"><span class="meta">cursor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   The item at the end of the edge.</span></span></li><li><span class="tab"><span class="meta">node</span>: <a class="support type" href="parentalert.doc.html">ParentAlert</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">AttendancesOverview</span> {</li><li></li><li><span class="tab"><span class="comment line">#   日期</span></span></li><li><span class="tab"><span class="meta">date</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   日期日数</span></span></li><li><span class="tab"><span class="meta">day</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="comment line">#   签到状态对应颜色</span></span></li><li><span class="tab"><span class="meta">stateColor</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
@@ -655,7 +655,55 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="parentalertconnection.doc.html" title="ParentAlertConnection - The connection type for ParentAlert.">ParentAlertConnection<em>The connection type for ParentAlert.</em></a><li></ul>
+        <ul class="require-by"><li><a href="wxaparentquery.doc.html" title="WxaParentQuery - 业务逻辑错误代码(包含query和mutation)
+
+not_bind_student: 未绑定学生
+
+student_bind_info_error: 绑定学生信息有误
+
+week_number_error: 周数不在可选范围内
+
+start_date_error: 开始日期不能大于结束日期
+
+not_authorize: 权限不足
+
+feature_not_found: 班级简介不存在
+
+album_not_found: 班级故事不存在
+
+noti_not_found: 班级通知不存在
+
+shareable_not_found: 分享页面不存在
+
+student_not_found: 学生不存在
+
+current_term_blank: 没有当前学期信息
+
+">WxaParentQuery<em>业务逻辑错误代码(包含query和mutation)
+
+not_bind_student: 未绑定学生
+
+student_bind_info_error: 绑定学生信息有误
+
+week_number_error: 周数不在可选范围内
+
+start_date_error: 开始日期不能大于结束日期
+
+not_authorize: 权限不足
+
+feature_not_found: 班级简介不存在
+
+album_not_found: 班级故事不存在
+
+noti_not_found: 班级通知不存在
+
+shareable_not_found: 分享页面不存在
+
+student_not_found: 学生不存在
+
+current_term_blank: 没有当前学期信息
+
+</em></a><li></ul>
     </div>
 </section>
 <footer>
