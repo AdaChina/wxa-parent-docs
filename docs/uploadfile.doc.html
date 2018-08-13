@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>ReadingHomeworkInput</title>
+    <title>UploadFile</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -75,7 +75,7 @@
                 String
             </a>
         </li>
-        <li  title="UploadFile">
+        <li class="slds-is-active" title="UploadFile">
             <a href="uploadfile.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 UploadFile
             </a>
@@ -585,7 +585,7 @@
                 PracticeHomeworkInput
             </a>
         </li>
-        <li class="slds-is-active" title="ReadingHomeworkInput">
+        <li  title="ReadingHomeworkInput">
             <a href="readinghomeworkinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 ReadingHomeworkInput
             </a>
@@ -640,9 +640,10 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">INPUT_OBJECT</p>
-        <h1 class="slds-text-heading--large">ReadingHomeworkInput</h1>
-        <div class="slds-text-body--regular"></div>
+        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
+        <h1 class="slds-text-heading--large">UploadFile</h1>
+        <div class="slds-text-body--regular"><p>上传文件的类型，会读取表单中字段为&#39;file&#39;的参数</p>
+</div>
     </div>
 </section>
 <section>
@@ -653,7 +654,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">input</span> <span class="identifier">ReadingHomeworkInput</span> {</li><li><span class="tab"><li><span class="tab"><span class="comment line">#   图片key</span></span></li><li><span class="tab"><span class="meta">imageKey</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   标题</span></span></li><li><span class="tab"><span class="meta">title</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   时长</span></span></li><li><span class="tab"><span class="meta">duration</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li><span class="tab"><li><span class="tab"><span class="comment line">#   感悟</span></span></li><li><span class="tab"><span class="meta">remark</span>: <a class="support type" href="string.doc.html">String</a></span></li></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">UploadFile</span></li></ul></code>
     </div>
 </section>
 <section>
